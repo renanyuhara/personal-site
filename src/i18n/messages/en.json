@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "SOFTWARE ENGINEERING · PROJECTS · CURIOSITY",
+    "titlePrefix": "Hi, I'm",
+    "titleSuffix": "I like building things.",
+    "explore": "Explore projects",
+    "scroll": "SCROLL TO EXPLORE ↓"
+  },
+  "about": {
+    "label": "01 / ABOUT",
+    "title": "A little about me",
+    "interests": "Areas of interest"
+  },
+  "projects": {
+    "label": "02 / PROJECTS",
+    "title": "From code to practice",
+    "intro": "Personal projects, tools, and learning experiments."
+  },
+  "contact": {
+    "label": "03 / CONTACT",
+    "title": "Let's talk",
+    "description": "Interested in technology, projects, or a conversation about software engineering? You can find me on GitHub."
+  },
+  "footer": {
+    "madeWith": "Built with curiosity and attention to detail.",
+    "backToTop": "Back to top ↑"
+  },
+  "profile": {
+    "intro": "I build software, explore new technologies, and turn ideas into projects I enjoy creating and sharing.",
+    "description": "Software developer since 2008, primarily working with .NET and SQL Server. I also enjoy web applications, automation, data engineering, and personal projects."
+  },
+  "projectDescriptions": {
+    "rpgCodex": "An app for organizing characters, locations, and knowledge from tabletop RPG campaigns.",
+    "kickoffErp": "A sports management project designed to support club operations.",
+    "discordCleaner": "A tool to review and organize Discord messages and attachments.",
+    "sparkScalaLearning": "Hands-on exercises and experiments while learning Scala and Apache Spark."
+  }
+}

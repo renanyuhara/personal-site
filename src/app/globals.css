@@ -52,3 +52,5 @@ h1,h2,h3 {font-family:'Space Grotesk',sans-serif;}
 .footer {border-top:1px solid var(--line);padding-block:30px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:12px;}
 @media(max-width:760px){.shell{width:calc(100% - 32px)}.site-header{padding-block:20px}.hero{min-height:630px;padding-block:70px 120px}.hero-bottom span:last-child{display:none}.section{padding-block:75px}.section-heading{display:block}.about{grid-template-columns:1fr;gap:20px}.project-grid{grid-template-columns:1fr}.footer{flex-wrap:wrap}.eyebrow{font-size:9px;letter-spacing:1px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+.language-switch{border:1px solid var(--line);border-radius:4px;padding:6px 9px;font-weight:700;color:var(--accent)}

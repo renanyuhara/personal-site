@@ -1,25 +1,26 @@
-# Segurança e privacidade
+# Security and Privacy
 
-Este é um repositório público destinado a apresentar projetos e competências profissionais.
+This repository is public by design. Treat all committed content and all browser-delivered assets as public information.
 
-## Checklist antes de qualquer PR
+## Pre-merge checklist
 
-- [ ] Nenhum token, password, chave privada, cookie, credencial ou ficheiro `.env` real foi incluído.
-- [ ] Nenhuma morada residencial, contacto privado ou documento pessoal foi publicado.
-- [ ] Nenhuma informação interna de empregadores, clientes ou projetos privados foi incluída.
-- [ ] Existe autorização para divulgar imagens e dados de terceiros.
-- [ ] Links externos usam `rel="noopener noreferrer"` quando abertos em novas janelas.
-- [ ] Dependências e CI foram revistos e têm apenas as permissões necessárias.
-- [ ] Textos de apresentação e referências profissionais foram confirmados pelo proprietário.
+- [ ] No passwords, API tokens, cookies, private keys, or real `.env` files.
+- [ ] No private home address, personal documents, or third-party personal data.
+- [ ] No confidential information from employers, customers, or internal projects.
+- [ ] Permission to publish images and personal information belonging to other people.
+- [ ] External links opening new tabs use `rel="noopener noreferrer"`.
+- [ ] Dependencies and CI permissions are reviewed.
+- [ ] Both English and Portuguese translations are updated where relevant.
+- [ ] All public statements and project descriptions have been reviewed by the owner.
 
-## Segredos
+## Secrets and incident response
 
-Utiliza variáveis de ambiente no serviço de hosting, nunca no Git. Variáveis prefixadas com `NEXT_PUBLIC_` são potencialmente expostas ao cliente. Um ficheiro removido continua a poder aparecer no histórico Git; perante fuga, revogar/rodar imediatamente a credencial.
+Configure secrets only in the hosting platform. Variables prefixed with `NEXT_PUBLIC_` are potentially exposed to browsers. Removing a secret in a later commit does not erase Git history; revoke or rotate exposed credentials immediately.
 
-## Reportar problemas
+## Reporting
 
-Reporta vulnerabilidades de forma privada ao proprietário via GitHub, quando o canal privado de reporte estiver disponível. Não incluir segredos ou provas de exploração em issues públicas.
+Use GitHub's private vulnerability reporting channel if enabled. Avoid disclosing sensitive findings in public issues.
 
-## Operação
+## Before launch
 
-Antes do lançamento: ativar proteções de branch, alertas de dependências, secret scanning/push protection conforme a disponibilidade da conta e revisão manual de deploy.
+Enable available secret scanning, push protection, dependency alerts, and main-branch protections. Search indexing stays disabled until content is reviewed.

@@ -1,28 +1,32 @@
 # Personal Site · yuhara.dev
 
-Portfólio pessoal de Renan Yuhara: engenharia de software, projetos e interesses.
+Personal portfolio of Renan Yuhara, built with Next.js, React, and TypeScript.
 
-> Estado: primeira versão em desenvolvimento. Conteúdo e identidade visual sujeitos a revisão antes da publicação.
+> Work in progress. The public website has not been deployed.
 
-## Stack
+## Languages and conventions
 
-- Next.js (App Router), React e TypeScript
-- CSS responsivo sem dependências de UI
-- CI no GitHub Actions (lint, typecheck e build)
-- Deploy previsto: Vercel, com domínio gerido separadamente
+**English is the default language for everything:** source code, comments, documentation, issues, pull requests, commit messages, and website content.
 
-## Executar localmente
+The website currently supports:
 
-Requer Node.js 22 ou superior.
+- English: `/en` (default; `/` redirects to `/en`)
+- Portuguese: `/pt`
+
+Translations are stored in `src/i18n/messages/`. The locale is explicit in the URL; no automatic browser-language redirection occurs. Text changes should update **both** dictionaries.
+
+## Development
+
+Node.js 22 or later is recommended.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abre http://localhost:3000.
+Visit http://localhost:3000 (redirects to `/en`).
 
-## Qualidade
+Quality checks:
 
 ```bash
 npm run lint
@@ -30,24 +34,24 @@ npm run typecheck
 npm run build
 ```
 
-## Estrutura
+## Project structure
 
-- `src/app`: rotas, metadados e estilos
-- `src/data`: informações públicas e projetos exibidos no site
-- `.github/workflows`: pipeline CI
-- `SECURITY.md`: política de segurança e checklist de publicação
+- `src/app/[locale]`: localized pages, HTML language, and SEO metadata
+- `src/i18n`: supported locales, dictionaries, and translations
+- `src/data`: public profile details and project metadata
+- `src/middleware.ts`: default-English redirect
+- `.github/workflows`: CI
+- `SECURITY.md`: security guidelines
 
-## Publicação e privacidade
+## Security
 
-Este repositório é **público**. Não comitar tokens, credenciais, endereços residenciais, documentos internos ou dados pessoais de terceiros. A informação profissional é apresentada de forma genérica até ser revista.
+The repository is **public**. Never commit credentials, private addresses, internal workplace information, or third-party personal data. Keep secrets in hosting environment variables and never expose them through `NEXT_PUBLIC_*` variables.
 
-Para configuração opcional, usa `.env.local` (ignorando-o no Git). Não colocar segredos em variáveis `NEXT_PUBLIC_*`.
+The production domain, hosting, and branch protections are not configured yet. Review all biographical text and links before enabling search indexing.
 
-Deploy e domínio **ainda não foram configurados**. Antes do lançamento, rever textos, links, SEO e consentimento para fotografias.
+## Next steps
 
-## Próximos passos
-
-1. Validar o texto biográfico e os projetos a destacar.
-2. Rever identidade visual, fotografias e eventual versão EN/PT.
-3. Configurar Vercel, domínio e políticas da branch principal.
-4. Acrescentar testes e acessibilidade.
+1. Run CI and check the website locally.
+2. Review the English copy and Portuguese translations.
+3. Add tests, accessibility checks, and reproducible dependency lockfile.
+4. Configure hosting and custom domain after approval.
