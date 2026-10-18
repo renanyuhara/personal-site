@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "eyebrow": "ENGENHARIA DE SOFTWARE · PROJETOS · CURIOSIDADE",
+    "titlePrefix": "Olá, sou o",
+    "titleSuffix": "Gosto de construir coisas.",
+    "explore": "Explorar projetos",
+    "scroll": "CONTINUAR ↓"
+  },
+  "about": {
+    "label": "01 / SOBRE",
+    "title": "Um pouco sobre mim",
+    "interests": "Áreas de interesse"
+  },
+  "projects": {
+    "label": "02 / PROJETOS",
+    "title": "Do código à prática",
+    "intro": "Projetos pessoais, ferramentas e experiências de aprendizagem."
+  },
+  "contact": {
+    "label": "03 / CONTACTO",
+    "title": "Vamos conversar?",
+    "description": "Interessado em tecnologia, projetos ou numa conversa sobre engenharia de software? Podes encontrar-me no GitHub."
+  },
+  "footer": {
+    "madeWith": "Feito com curiosidade e atenção aos detalhes.",
+    "backToTop": "Voltar ao topo ↑"
+  },
+  "profile": {
+    "intro": "Desenvolvo software, exploro novas tecnologias e transformo ideias em projetos que gosto de construir e partilhar.",
+    "description": "Desenvolvedor de software desde 2008, principalmente no ecossistema .NET e SQL Server. Também me interesso por aplicações web, automação, engenharia de dados e projetos pessoais."
+  },
+  "projectDescriptions": {
+    "rpgCodex": "Uma aplicação para organizar personagens, lugares e conhecimento de campanhas de RPG.",
+    "kickoffErp": "Projeto de gestão desportiva, pensado para apoiar operações de clubes.",
+    "discordCleaner": "Ferramenta para auxiliar a revisão e organização de mensagens e anexos do Discord.",
+    "sparkScalaLearning": "Exercícios e experiências práticas de aprendizagem de Scala e Apache Spark."
+  }
+}
